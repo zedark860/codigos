@@ -1,19 +1,21 @@
 #Fatiamento de string:
+
+#Análise:
 #len()
 #count()
 #find()
 #rfind()
 #in
 
-#Fatiamento:
+#Transformação:
 #replace()
 #upper()
 #lower()
-#capatalize()
+#capitalize()
 #title()
 #strip()
 #rstrip()
-#ltrip
+#lstrip()
 
 #Divisão:
 #split()

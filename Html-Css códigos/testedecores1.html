@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\ze_dark_\Desktop\imagens\favicon (1).ico" type="image/x-icon">
+    <title>Cor Aleatória no Body</title>
+  
+    <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    h1, h2 {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Cor Aleatória no Body</h1>
+    <h2>Pai é bom? Fala tu</h2>
+  
+    <script>
+    function gerarCorAleatoria() {
+      var letras = '0123456789ABCDEF';
+      var cor = '#';
+      for (var i = 0; i < 6; i++) {
+        cor += letras[Math.floor(Math.random() * 16)];
+      }
+      return cor;
+    }
+
+    function atualizarCorAleatoria() {
+        var body = document.querySelector('body');
+        var h1 = document.querySelector('h1');
+        var h2 = document.querySelector('h2');
+        body.style.backgroundColor = gerarCorAleatoria();
+        h1.style.color = gerarCorAleatoria();
+        h2.style.color = gerarCorAleatoria()
+    }
+
+    setInterval(atualizarCorAleatoria, 250);
+    
+    </script>
+
+</body>
+</html>
