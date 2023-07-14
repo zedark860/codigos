@@ -7,12 +7,17 @@
     <link rel="shortcut icon" href="C:\Users\ze_dark_\Desktop\imagens\favicon (1).ico" type="image/x-icon">
     
     <style>
-        body{
-            background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed;
+            background-image: linear-gradient(to top, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
         }
         h1{
             color: white;
             text-align: center;
+            text-shadow: 2px 2px 5px black;
         }
         .inframe-container{
             text-align: center;
@@ -20,21 +25,40 @@
         p{
             color: white;
             text-align: center;
+            text-shadow: 2px 2px 5px black;
         }
         .a-container{
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 61px;
+            background-color: rgb(76, 113, 146);
+            border-radius: 22px;
+            margin: auto;
+            box-shadow: 2px 2px 10px black;
+        }
+        main{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 600px;
+            padding: 10px;
+            margin: auto;
+            background-color: rgb(20, 54, 94);
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px black;
         }
     </style>
 
 </head>
 <body>
-    <h1>Curso de JavaScript</h1>
-    <div class="inframe-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BXqUH86F-kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <p>Veja o curso completo</p>
-    <div class="a-container">
-        <a href="../d009.html" target="_self" rel="prev"><img src="C:\Users\ze_dark_\Desktop\imagens\voltar.png" alt="imagem_voltar"></a>
-    </div>
+    <main>
+        <h1>Curso de JavaScript</h1>
+        <div class="inframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BXqUH86F-kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <p>Veja o curso completo</p>
+        <div class="a-container">
+                <a href="../d009.html" target="_self" rel="prev"><img src="C:\Users\ze_dark_\Desktop\imagens\voltar.png" alt="imagem_voltar"></a>
+        </div>
+    </main>
 </body>
 </html>

@@ -15,7 +15,7 @@ def jogo_adivinhacao(n, nummaquina):
         return amarelo + 'PARABÉNS! Você conseguiu me vencer!' + reset
 
     else:
-        return vermelho + 'GANHEI! Eu pensei no número {} e não no {}'.format(nummaquina,n) + reset
+        return vermelho + f'GANHEI! Eu pensei no número {nummaquina} e não no {n}.' + reset
 
 while True:
 
