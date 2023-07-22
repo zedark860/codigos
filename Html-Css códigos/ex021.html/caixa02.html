@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom, rgba(155, 149, 149, 0.788), lightgray);
+            margin: 0;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        header > h1{
+            text-align: center;
+        }
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            border: 2px solid black;
+            box-shadow: 3px 2px 7px 1px rgba(0, 0, 0, 0.452);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 49px;
+            margin-left: 250px;
+        }
+        nav > a:hover{
+            text-decoration: underline black;
+        }
+        .altura{
+            height: 720px;
+        }
+        main{
+            background-color: white;
+            width: 500px;
+            display: block;
+            padding: 10px;
+            margin: 10px auto;
+            border: 3px solid black;
+            border-radius: 25px 0px 28px;
+            box-shadow: 2px 2px 5px 1px #00000065;
+        }
+        #assuntos > p{
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(102, 102, 102);
+            color: white;
+            border: 5px solid black;
+            border-radius: 7px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(141, 140, 140);
+            width: 223px;
+        }
+        article > h2{
+            text-align: center;
+        }
+        article > p{
+            text-align: justify;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 6px;
+            margin: 0px;
+            border-top: 5px solid;
+            border-bottom: 5px solid;
+            border-color: white;
+        }
+        footer > p{
+            text-decoration: underline;
+            margin: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <div class="altura">
+        <main>
+            <section id="assuntos">
+                <p>Esportes Política Tecnologia</p>
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Notícia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe mollitia aperiam asperiores porro reiciendis maiores debitis in repudiandae delectus consequatur, fugiat possimus iure deleniti consectetur quae quos officiis soluta veritatis!</p>
+                    <aside>
+                        <p>Artigo escrito por José da Silva</p>
+                    </aside>
+                </article>
+                <article>
+                </article>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>

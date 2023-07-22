@@ -3,31 +3,31 @@ import socket
 
 def jogo_pedra_papel_tesoura(num):
     itens=('Pedra', 'Papel', 'Tesoura')
-    computador=random.randint(0,2)
+    computador=random.choice(itens)
     nome_maquina=socket.gethostname()
     if num==0:
-        if itens[computador]=='Pedra':
-            return 'IMPATE!', f'Eu(computador) e você({nome_maquina}) escolhemos PEDRA!'
-        elif itens[computador]=='Papel':
-            return 'PERDEU!', 'Eu(computador) escolhi PAPEL!'
+        if computador=='Pedra':
+            return 'IMPATE!', f'Eu({nome_maquina}) e você(Player) escolhemos PEDRA!'
+        elif computador=='Papel':
+            return 'PERDEU!', f'Eu({nome_maquina}) escolhi PAPEL!'
         else:
-            return 'GANHOU!', 'Eu(computador) escolhi TESOURA!'
+            return 'GANHOU!', f'Eu({nome_maquina}) escolhi TESOURA!'
     
     elif num==1:
-        if itens[computador]=='Tesoura':
-            return 'IMPATE!', f'Eu(computador) e você({nome_maquina}) escolhemos TESOURA!'
-        elif itens[computador]=='Pedra':
-            return 'PERDEU!', 'Eu(computador) escolhi PEDRA!'
+        if computador=='Tesoura':
+            return 'IMPATE!', f'Eu({nome_maquina}) e você(Player) escolhemos TESOURA!'
+        elif computador=='Pedra':
+            return 'PERDEU!', f'Eu({nome_maquina}) escolhi PEDRA!'
         else:
-            return 'GANHOU!', 'Eu(computador) escolhi PAPEL'
+            return 'GANHOU!', f'Eu({nome_maquina}) escolhi PAPEL'
     
     elif num==2:
-        if itens[computador]=='Papel':
-            return 'IMPATE', f'Eu(computador) e você({nome_maquina}) escolhemos PAPEL!'
-        elif itens[computador]=='Tesoura':
-            return 'PERDEU!', 'Eu(computador) escolhi TESOURA!'
+        if computador=='Papel':
+            return 'IMPATE', f'Eu({nome_maquina}) e você(Player) escolhemos PAPEL!'
+        elif computador=='Tesoura':
+            return 'PERDEU!', f'Eu({nome_maquina}) escolhi TESOURA!'
         else:
-            return 'GANHOU!', 'Eu(computador) escolhi PEDRA!'
+            return 'GANHOU!', f'Eu({nome_maquina}) escolhi PEDRA!'
     
     return 'Você não escolheu nenhuma das OPÇÕES!'
 
