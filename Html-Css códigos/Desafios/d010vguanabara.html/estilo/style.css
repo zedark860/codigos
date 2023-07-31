@@ -43,7 +43,7 @@ header{
     min-height: 150px;
     text-align: center;
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 header > h1{
