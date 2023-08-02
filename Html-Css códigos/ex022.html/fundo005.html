@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        :root{
+            --cor01: #B1B6A6;
+            --cor02: #819595;
+            --cor03: #696773;
+            --cor04: #363946;
+            --cor05: #000000;
+
+            --fonte-titulo: 'fonte-titulo';
+            --fonte-padrao: Arial, Helvetica, sans-serif;
+        }
+        @font-face {
+            font-family: 'fonte-titulo';
+            src: url('fonte/cubic.ttf') format('truetype');
+        }
+        body{
+            height: 97vh;
+            background-image: url('imagens/wallpaper005.jpg');
+            background-position: top center;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
+        header{
+            margin-top: 10px;
+        }
+        header h1{
+            max-width: 750px;
+            margin: auto;
+            border: 5px solid gray;
+            border-radius: 30px;
+            box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.219);
+            font-family: var(--fonte-titulo);
+            text-align: center;
+            padding-top: 10px;
+            background-image: linear-gradient(to bottom, var(--cor01), var(--cor04));
+        }
+        nav {
+            margin-top: 15px;
+            margin-right: 0px;
+            margin-right: 0px;
+            padding: 10px;
+            max-width: auto;
+            background-color: var(--cor04);
+            border-bottom: 3px solid white;
+        }
+        nav a{
+            font-family: var(--fonte-padrao);
+            color: white;
+            text-decoration: none;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+        nav a:hover{
+            background-color: var(--cor02);
+            transition-duration: 1.5s;
+            border-radius: 10px;
+        }
+        main{
+            max-width: 800px;
+            height: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: var(--cor03);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tecnologia e desenvolvimento</h1>
+    </header>
+    <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Contato</a>
+            <a href="#">Curiosidades</a>
+    </nav>
+    <main>
+        <article>
+            <h1>Texto</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, illum non sequi accusamus consectetur culpa! Ex, consequuntur mollitia amet fuga fugit rerum quam, animi molestiae eligendi blanditiis sint nisi sit.</p>
+        </article>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
