@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1#Titulo{
+    display: flex;
+}
+nav{
+    height: 50px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: cornflowerblue;
+    background-color: black;
+    padding: 1.7px;
+    border-radius: 17%;
+}
+nav a:hover{
+    color: white;
+    background-color: aquamarine;
+    transition-duration: .5s;
+}
+
+.descer{
+    margin-right: 50px;
+    cursor: pointer;
+    outline: none;
+}
+
+.active, .descer:hover{
+    background-color: aqua;
+}
+
+.abas{
+    display: none;
+    overflow: hidden;
+    text-align: justify;
+}
