@@ -4,26 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Recursos/IMG/Logo/DataFlowNexus_1.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <title>DataFlowNexus</title>
 </head>
 <body>
     <header>
-        <nav>
-            <h1 id="Titulo">DataFlowNexus</h1>
-            <button type="button" class=""></button>
-            <button type="button" class="descer">Conhecimento</button>
-            <div class="abas">
-                <a href="#" target="_self">as</a>
-                <a href="#" target="_self">ad</a>
-                <a href="#" target="_self">as</a>
-                <a href="#" target="_self">12</a>
+        <div id="loading-overlay" class="loading-overlay">
+            <div class="spinner"></div>
+        </div>
+        <nav class="navbar  bg-body-tertiary fixed-top" data-bs-theme="dark" id="arredondamento">
+            <div class="container-fluid">
+                <img class="dataflow-logo" src="Recursos/IMG/Logo/DataFlow.png" alt="logo-dataflownexus">
+              <a class="navbar-brand" href="index.html" id="titile">DataFlow Nexus</a>
+              <div class="button-container">
+                <button class="navbar-toggler" type="button expand-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <div class="title-container">
+                    <h5 class="offcanvas-title expand-title" id="offcanvasNavbarLabel">DataFlowNexus</h5>
+                  </div>
+                  <div class="button-container">
+                    <button type="button" class="btn-close expand-button" id="button-mouse" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                </div>
+                <div class="offcanvas-body">
+                    <hr>
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown" id="nav-transition">
+                      <div class="navigation-container">
+                        <a href="">
+                          Navegação
+                        </a>
+                        <ul id="transicao-suave">
+                          <li><a class="link-with-loading" href="paginas-extras/switch.html">Switch</a></li>
+                          <li><a class="link-with-loading" href="paginas-extras/roteador.html">Roteador</a></li>
+                          <li><a class="link-with-loading" href="paginas-extras/firewall.html">Firewall</a></li>
+                          <li><a class="link-with-loading" href="paginas-extras/servidor.html">Servidor</a></li>
+                          <li>
+                            <hr >
+                          </li>
+                          <li><a href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <hr>
+                </div>
+              </div>
             </div>
-            <a href="" target="_self">Contato</a>
-        </nav>
+          </nav>
     </header>
-    <script src="javasript.js"></script>
-    <!--Vai entender esse js viu, quanto ele estava no head, não
-    quiz funcionar, mas agora que está no body, o funcionou.-->
+    <main class="content">
+        <section class="section-style">
+            <p class="tamanho-padrao"><strong class="fonte">DataFlow Nexus</strong> é um site que tem como intuito apresentar uma breve exposição sobre o setor de <strong>Redes de Computadores</strong> na área 
+            da Tecnologia da Informação. Isso inclui uma breve apresentação dos tipos de redes, dos equipamentos utilizados, de alguns protocolos
+            e assim por diante.
+            </p>
+        </section>
+      <video class="video-background"  muted loop>
+        <source src="Recursos/Videos/video_de_fundo.mp4" type="video/mp4">
+        Seu navegador não suporta a reprodução de vídeo.
+      </video>
+      <video class="video_intro" autoplay muted loop>
+        <source src="Recursos/Videos/video_abertura.mp4">
+        Seu navegador não suporta a reprodução de vídeo.
+      </video>
+        <article class="artigo-principal">
+            <h1>Rede em Geral e sua Importância</h1>
+            <p class="tamanho-padrao">
+              "Rede de Dados", ou comumente conhecida como <b>Rede de Computadores</b>, é um dos ramos mais importantes da <b>T.I</b> 
+              (Tecnologia da Informação). É graças a ela que você e eu estamos acessando este site no momento. Devido à vasta 
+              rede de computadores espalhada pelo mundo, temos acesso a toda essa fonte de informações, conhecida como a Internet. 
+            </p class="tamanho-padrao"> 
+            <p class="tamanho-padrao">
+              Mas o que realmente é uma <b>Rede de Computadores</b>? Bem, a Rede de Computadores é uma vasta rede de computadores interligados 
+              entre si, através de roteadores, switches, servidores e por vários cabos de rede ou de fibra ótica. 
+            </p>
+            <p class="tamanho-padrao">
+              É graças à rede que podemos nos comunicar com sites como Amazon.com, Youtube.com, o DataFlowNexus e muitos outros. 
+              Essa rede é extremamente importante para a economia do mundo todo, pois sem ela... tudo pode desmoronar em segundos: empregos,
+              dinheiro, comida, tudo pode sumir. Por isso, devemos dar grande importância à rede e sempre garantir o seu funcionamento.
+            </p>
+        </article>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Recursos/IMG/Slide/Carr.1.jpg" class="d-block w-100" id="img1" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Recursos/IMG/Slide/Carr.2.jpg" class="d-block w-100" id="img2" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Recursos/IMG/Slide/Carr.3.jpg" class="d-block w-100" id="img3" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Recursos/IMG/Slide/Carr.4.png" class="d-block w-100" id="img4" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <article class="artigo-principal">
+            <h1>Equipamentos que a Mantem Viva</h1>
+            
+        </article>
+    </main>
+        <footer>
+
+        </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="javasript.js"></script>
 </html>
