@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        fieldset{
+            width: 0px;
+            display: flex;
+        }
+        #texto{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sua Nacionalidade</h1>
+    <form action="">
+        <fieldset>
+            <legend>Qual sua Nacionalidade?</legend>
+            <input type="text" name="texto" id="texto">
+            <input type="button" value="Verificar" onclick="nacionalidade()">
+        </fieldset>
+    </form>
+    <div id="resultado"></div>
+    <script>
+        function nacionalidade() {
+            var texto = document.getElementById('texto').value
+            var resultado = document.getElementById('resultado')
+            resultado.innerHTML = `<p>Sua nacionalidade é ${texto}<p>`
+            if (texto==='Brasil'){
+                resultado.innerHTML += `<p>Você é BRASILEIRO!</p>`
+            } else {
+                resultado.innerHTML += `<p>Você é ESTRANGEIRO!</p>`
+            }
+            resultado.innerHTML += `<p>Independente de sua nacionalidade você será bem vindo!</p>`
+        }
+    </script>
+</body>
+</html>
