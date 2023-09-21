@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.flex-box{
+    display: grid;
+    place-items: center;
+}
+.flex{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.47);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 150px;
+    border-radius: 50%;
+}
