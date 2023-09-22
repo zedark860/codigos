@@ -11,8 +11,8 @@ function verificarIdade() {
     var anoA = parseInt(ano.value)
     var selectedSexo = ""
 
-    if (anoA > Atual){
-        window.alert('[ERRO] Verique os dados e tente novamente!')
+    if (anoA > Atual || anoA < 1920){
+        window.alert('[ERRO] Verique seu ano de nascimento')
         return
     }
 
@@ -32,20 +32,20 @@ function verificarIdade() {
     switch (selectedSexo){
         case 'M':
             if (idade < 18) {
-                mostrar.innerHTML = `<p>Dectamos que você é Homem com ${idade} anos!</p> <img src=''>`
+                mostrar.innerHTML = `<p>Detectamos que você é Homem com ${idade} anos!</p> <img src=''>`
             } else if (idade >= 18) {
-                mostrar.innerHTML = `<p>Dectamos que você é Homem com ${idade} anos!</p> <img src=''>`
+                mostrar.innerHTML = `<p>Detectamos que você é Homem com ${idade} anos!</p> <img src=''>`
             } else if (idade > 50){ 
-                mostrar.innerHTML = `<p>Dectamos que você é Homem com ${idade} anos!</p> <img src=''>`
+                mostrar.innerHTML = `<p>Detectamos que você é Homem com ${idade} anos!</p> <img src=''>`
             }
         break
         case 'F':
             if (idade < 18) {
-                mostrar.innerHTML = `<p>Dectamos que você é Mulher com ${idade} anos!</p> <img src=''>`
+                mostrar.innerHTML = `<p>Detectamos que você é Mulher com ${idade} anos!</p> <img src=''>`
             } else if (idade >= 18) {
-                mostrar.innerHTML = `<p>Dectamos que você é Mulher com ${idade} anos!</p> <img src=''>`
+                mostrar.innerHTML = `<p>Detectamos que você é Mulher com ${idade} anos!</p> <img src=''>`
             } else if (idade > 50){ 
-                mostrar.innerHTML = `<p>Dectamos que você é Mulher com ${idade} anos!</p> <img src=''>`
+                mostrar.innerHTML = `<p>Detectamos que você é Mulher com ${idade} anos!</p> <img src=''>`
             }
         break
     }
