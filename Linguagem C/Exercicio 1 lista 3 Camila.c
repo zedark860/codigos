@@ -3,6 +3,7 @@
 *******************************************************************************/
 
 #include <stdio.h>
+#include <unistd.h>
 
 int main ()
 {
@@ -14,6 +15,7 @@ int main ()
        if(i%2==1)
        {
            printf("Número %i\n", i);
+           sleep(1);
        }
         
     }

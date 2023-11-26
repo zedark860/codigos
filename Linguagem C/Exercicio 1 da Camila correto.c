@@ -5,7 +5,7 @@
 int main()
 {
     
-    int n1,n2,n3,i,maior;
+    int n1,n2,n3,maior;
     
     printf("Digite 3 números para saber qual deles é o maior:\n");
     
